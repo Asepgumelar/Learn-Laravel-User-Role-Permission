@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,25 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', function () {
+    return redirect()->route('dashboard');
+});
+
+Route::group(['namespace' => 'backend'], function () {
+    Route::get('dashboard', 'DashboardController@index')
+        ->name('dashboard');
+
+    Route::get('user', 'UserController@index')
+        ->name('user-index');
+
+    Route::get('permission', 'PermissionController@index')
+        ->name('permission-index');
+
+    Route::get('role', 'RolesController@index')
+        ->name('role-index');
+});
