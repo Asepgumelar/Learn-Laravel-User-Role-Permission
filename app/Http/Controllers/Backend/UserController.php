@@ -11,4 +11,9 @@ class UserController extends Controller
     {
         return view('modules.backend.user.index');
     }
+
+    public function getDataTable()
+    {
+        //
+    }
 }
