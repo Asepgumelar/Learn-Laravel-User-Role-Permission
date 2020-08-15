@@ -30,10 +30,18 @@ Route::group(['namespace' => 'backend'], function () {
 
     Route::get('user', 'UserController@index')
         ->name('user-index');
+    Route::get('datatable', 'UserController@getDataTable')
+        ->name('user-getDataTable');
+    Route::get('user/create', 'UserController@showCreate')
+        ->name('user-create');
 
     Route::get('permission', 'PermissionController@index')
         ->name('permission-index');
+    Route::get('permission/create', 'PermissionController@showCreate')
+        ->name('permission-create');
 
     Route::get('role', 'RolesController@index')
         ->name('role-index');
+    Route::get('role/create', 'RoleController@showCreate')
+        ->name('role-create');
 });

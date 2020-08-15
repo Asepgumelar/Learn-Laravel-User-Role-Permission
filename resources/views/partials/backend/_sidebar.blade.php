@@ -1,4 +1,4 @@
-<aside class="main-sidebar sidebar-light-info elevation-4">
+<aside class="main-sidebar elevation-4 sidebar-light-info">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
         <img src="{{ asset('themes/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li class="nav-item has-treeview {{ Request::path() == 'user' || Request::path() == 'role' || Request::path() == 'permission' ? 'menu-open' : '' }}">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link {{ Request::path() == 'user' || Request::path() == 'role' || Request::path() == 'permission' ? 'active' : '' }}">
                         <i class="nav-icon fas fa-user"></i>
                         <p>
                             User Management
