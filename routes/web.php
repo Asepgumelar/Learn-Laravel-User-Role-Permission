@@ -23,7 +23,7 @@ Route::get('/', function () {
 });
 
 Auth::routes(['register' => false]);
-
+Route::post('logout', 'LoginController@logout');
 Route::get('/home', function () {
     return redirect()->route('dashboard');
 });
