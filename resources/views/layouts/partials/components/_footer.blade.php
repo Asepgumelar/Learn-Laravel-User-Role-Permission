@@ -1,4 +1,4 @@
-<footer class="main-footer">
+<footer class="main-footer bg-dark">
     <strong>Copyright &copy; 2020 <a href="/">{{ env('APP_NAME')}}</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">

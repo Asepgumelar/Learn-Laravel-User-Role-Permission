@@ -357,7 +357,7 @@ textarea.form-control.is-warning {
 }
 
 .custom-switch.custom-switch-off-dark .custom-control-input ~ .custom-control-label::before {
-  background: #35495d;
+  background: #22252a;
   border-color: #060708;
 }
 
@@ -370,7 +370,7 @@ textarea.form-control.is-warning {
 }
 
 .custom-switch.custom-switch-on-dark .custom-control-input:checked ~ .custom-control-label::before {
-  background: #35495d;
+  background: #22252a;
   border-color: #060708;
 }
 
@@ -851,7 +851,7 @@ textarea.form-control.is-warning {
 }
 
 .custom-switch.custom-switch-off-gray-dark .custom-control-input ~ .custom-control-label::before {
-  background: #35495d;
+  background: #22252a;
   border-color: #060708;
 }
 
@@ -864,7 +864,7 @@ textarea.form-control.is-warning {
 }
 
 .custom-switch.custom-switch-on-gray-dark .custom-control-input:checked ~ .custom-control-label::before {
-  background: #35495d;
+  background: #22252a;
   border-color: #060708;
 }
 
@@ -1173,7 +1173,7 @@ textarea.form-control.is-warning {
 }
 
 .custom-range.custom-range-dark::-webkit-slider-thumb {
-  background-color: #35495d;
+  background-color: #22252a;
 }
 
 .custom-range.custom-range-dark::-webkit-slider-thumb:active {
@@ -1181,7 +1181,7 @@ textarea.form-control.is-warning {
 }
 
 .custom-range.custom-range-dark::-moz-range-thumb {
-  background-color: #35495d;
+  background-color: #22252a;
 }
 
 .custom-range.custom-range-dark::-moz-range-thumb:active {
@@ -1189,7 +1189,7 @@ textarea.form-control.is-warning {
 }
 
 .custom-range.custom-range-dark::-ms-thumb {
-  background-color: #35495d;
+  background-color: #22252a;
 }
 
 .custom-range.custom-range-dark::-ms-thumb:active {
@@ -1933,7 +1933,7 @@ textarea.form-control.is-warning {
 }
 
 .custom-range.custom-range-gray-dark::-webkit-slider-thumb {
-  background-color: #35495d;
+  background-color: #22252a;
 }
 
 .custom-range.custom-range-gray-dark::-webkit-slider-thumb:active {
@@ -1941,7 +1941,7 @@ textarea.form-control.is-warning {
 }
 
 .custom-range.custom-range-gray-dark::-moz-range-thumb {
-  background-color: #35495d;
+  background-color: #22252a;
 }
 
 .custom-range.custom-range-gray-dark::-moz-range-thumb:active {
@@ -1949,7 +1949,7 @@ textarea.form-control.is-warning {
 }
 
 .custom-range.custom-range-gray-dark::-ms-thumb {
-  background-color: #35495d;
+  background-color: #22252a;
 }
 
 .custom-range.custom-range-gray-dark::-ms-thumb:active {
@@ -2025,7 +2025,7 @@ textarea.form-control.is-warning {
 }
 
 .card-primary.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-primary.card-outline-tabs > .card-header a.active {
@@ -2096,7 +2096,7 @@ textarea.form-control.is-warning {
 }
 
 .card-secondary.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-secondary.card-outline-tabs > .card-header a.active {
@@ -2167,7 +2167,7 @@ textarea.form-control.is-warning {
 }
 
 .card-success.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-success.card-outline-tabs > .card-header a.active {
@@ -2238,7 +2238,7 @@ textarea.form-control.is-warning {
 }
 
 .card-info.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-info.card-outline-tabs > .card-header a.active {
@@ -2309,7 +2309,7 @@ textarea.form-control.is-warning {
 }
 
 .card-warning.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-warning.card-outline-tabs > .card-header a.active {
@@ -2380,7 +2380,7 @@ textarea.form-control.is-warning {
 }
 
 .card-danger.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-danger.card-outline-tabs > .card-header a.active {
@@ -2451,7 +2451,7 @@ textarea.form-control.is-warning {
 }
 
 .card-light.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-light.card-outline-tabs > .card-header a.active {
@@ -2505,7 +2505,7 @@ textarea.form-control.is-warning {
 }
 
 .card-dark:not(.card-outline) > .card-header {
-  background-color: #35495d;
+  background-color: #22252a;
 }
 
 .card-dark:not(.card-outline) > .card-header,
@@ -2518,15 +2518,15 @@ textarea.form-control.is-warning {
 }
 
 .card-dark.card-outline {
-  border-top: 3px solid #35495d;
+  border-top: 3px solid #22252a;
 }
 
 .card-dark.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-dark.card-outline-tabs > .card-header a.active {
-  border-top: 3px solid #35495d;
+  border-top: 3px solid #22252a;
 }
 
 .bg-dark .btn-tool,
@@ -2593,7 +2593,7 @@ textarea.form-control.is-warning {
 }
 
 .card-lightblue.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-lightblue.card-outline-tabs > .card-header a.active {
@@ -2664,7 +2664,7 @@ textarea.form-control.is-warning {
 }
 
 .card-navy.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-navy.card-outline-tabs > .card-header a.active {
@@ -2735,7 +2735,7 @@ textarea.form-control.is-warning {
 }
 
 .card-olive.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-olive.card-outline-tabs > .card-header a.active {
@@ -2806,7 +2806,7 @@ textarea.form-control.is-warning {
 }
 
 .card-lime.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-lime.card-outline-tabs > .card-header a.active {
@@ -2877,7 +2877,7 @@ textarea.form-control.is-warning {
 }
 
 .card-fuchsia.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-fuchsia.card-outline-tabs > .card-header a.active {
@@ -2948,7 +2948,7 @@ textarea.form-control.is-warning {
 }
 
 .card-maroon.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-maroon.card-outline-tabs > .card-header a.active {
@@ -3019,7 +3019,7 @@ textarea.form-control.is-warning {
 }
 
 .card-blue.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-blue.card-outline-tabs > .card-header a.active {
@@ -3090,7 +3090,7 @@ textarea.form-control.is-warning {
 }
 
 .card-indigo.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-indigo.card-outline-tabs > .card-header a.active {
@@ -3161,7 +3161,7 @@ textarea.form-control.is-warning {
 }
 
 .card-purple.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-purple.card-outline-tabs > .card-header a.active {
@@ -3232,7 +3232,7 @@ textarea.form-control.is-warning {
 }
 
 .card-pink.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-pink.card-outline-tabs > .card-header a.active {
@@ -3303,7 +3303,7 @@ textarea.form-control.is-warning {
 }
 
 .card-red.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-red.card-outline-tabs > .card-header a.active {
@@ -3374,7 +3374,7 @@ textarea.form-control.is-warning {
 }
 
 .card-orange.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-orange.card-outline-tabs > .card-header a.active {
@@ -3445,7 +3445,7 @@ textarea.form-control.is-warning {
 }
 
 .card-yellow.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-yellow.card-outline-tabs > .card-header a.active {
@@ -3516,7 +3516,7 @@ textarea.form-control.is-warning {
 }
 
 .card-green.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-green.card-outline-tabs > .card-header a.active {
@@ -3587,7 +3587,7 @@ textarea.form-control.is-warning {
 }
 
 .card-teal.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-teal.card-outline-tabs > .card-header a.active {
@@ -3658,7 +3658,7 @@ textarea.form-control.is-warning {
 }
 
 .card-cyan.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-cyan.card-outline-tabs > .card-header a.active {
@@ -3729,7 +3729,7 @@ textarea.form-control.is-warning {
 }
 
 .card-white.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-white.card-outline-tabs > .card-header a.active {
@@ -3800,7 +3800,7 @@ textarea.form-control.is-warning {
 }
 
 .card-gray.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-gray.card-outline-tabs > .card-header a.active {
@@ -3854,7 +3854,7 @@ textarea.form-control.is-warning {
 }
 
 .card-gray-dark:not(.card-outline) > .card-header {
-  background-color: #35495d;
+  background-color: #22252a;
 }
 
 .card-gray-dark:not(.card-outline) > .card-header,
@@ -3867,15 +3867,15 @@ textarea.form-control.is-warning {
 }
 
 .card-gray-dark.card-outline {
-  border-top: 3px solid #35495d;
+  border-top: 3px solid #22252a;
 }
 
 .card-gray-dark.card-outline-tabs > .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card-gray-dark.card-outline-tabs > .card-header a.active {
-  border-top: 3px solid #35495d;
+  border-top: 3px solid #22252a;
 }
 
 .bg-gray-dark .btn-tool,
@@ -4040,7 +4040,7 @@ textarea.form-control.is-warning {
 }
 
 .card.card-outline-tabs .card-header a:hover {
-  border-top: 3px solid #dee2e6;
+  border-top: 3px solid #4b545c;
 }
 
 .card.card-outline-tabs .card-header a.active:hover {
@@ -4319,7 +4319,7 @@ html.maximized-card {
 }
 
 .todo-list .dark {
-  border-left-color: #35495d;
+  border-left-color: #22252a;
 }
 
 .todo-list .lightblue {
@@ -4395,7 +4395,7 @@ html.maximized-card {
 }
 
 .todo-list .gray-dark {
-  border-left-color: #35495d;
+  border-left-color: #22252a;
 }
 
 .todo-list .handle {
@@ -4426,7 +4426,7 @@ html.maximized-card {
 
 .modal-content.bg-warning .modal-header,
 .modal-content.bg-warning .modal-footer {
-  border-color: #35495d;
+  border-color: #22252a;
 }
 
 .modal-content.bg-primary .close, .modal-content.bg-secondary .close, .modal-content.bg-info .close, .modal-content.bg-danger .close, .modal-content.bg-success .close {
@@ -5118,7 +5118,7 @@ html.maximized-card {
 
 .alert-dark {
   color: #ffffff;
-  background: #35495d;
+  background: #22252a;
   border-color: #292d32;
 }
 
@@ -5143,7 +5143,7 @@ html.maximized-card {
 .table.table-head-fixed thead tr:nth-child(1) th {
   background-color: #ffffff;
   border-bottom: 0;
-  box-shadow: inset 0 1px 0 #dee2e6, inset 0 -1px 0 #dee2e6;
+  box-shadow: inset 0 1px 0 #4b545c, inset 0 -1px 0 #4b545c;
   position: sticky;
   top: 0;
   z-index: 10;

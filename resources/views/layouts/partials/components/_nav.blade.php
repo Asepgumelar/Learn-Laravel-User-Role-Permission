@@ -1,4 +1,4 @@
-<nav class="main-header navbar navbar-expand navbar-light navbar-white">
+<nav class="main-header navbar navbar-expand navbar-dark no-border">
     <ul class="navbar-nav">
         <li class="nav-item">
             <a class="nav-link" data-widget="pushmenu" href="#" role="button">
@@ -6,8 +6,6 @@
             </a>
         </li>
     </ul>
-
-
 
     <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
