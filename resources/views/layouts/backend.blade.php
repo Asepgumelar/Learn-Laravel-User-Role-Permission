@@ -2,11 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
+    @include('layouts.partials._meta')
     <title>Laravel</title>
     @include('layouts.partials._style')
 </head>
@@ -45,7 +41,7 @@
         <aside class="control-sidebar control-sidebar-dark"> </aside>
 
    @include('layouts.partials.components._footer')
-     
+
     </div>
 
    @include('layouts.partials._script')
