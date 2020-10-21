@@ -3,9 +3,9 @@
     Dashboard
 @endsection
 @section('content')
-{{-- <div class="row">
+<div class="row">
     <div class="col-lg-6">
-        <div class="card">
+        <div class="card bg-dark">
             <div class="card-header border-0">
                 <div class="d-flex justify-content-between">
                     <h3 class="card-title">Online Store Visitors</h3>
@@ -44,7 +44,7 @@
         </div>
         <!-- /.card -->
 
-        <div class="card">
+        <div class="card bg-dark">
             <div class="card-header border-0">
                 <h3 class="card-title">Products</h3>
                 <div class="card-tools">
@@ -156,7 +156,7 @@
     </div>
     <!-- /.col-md-6 -->
     <div class="col-lg-6">
-        <div class="card">
+        <div class="card bg-dark">
             <div class="card-header border-0">
                 <div class="d-flex justify-content-between">
                     <h3 class="card-title">Sales</h3>
@@ -195,7 +195,7 @@
         </div>
         <!-- /.card -->
 
-        <div class="card">
+        <div class="card bg-dark">
             <div class="card-header border-0">
                 <h3 class="card-title">Online Store Overview</h3>
                 <div class="card-tools">
@@ -248,5 +248,5 @@
         </div>
     </div>
     <!-- /.col-md-6 -->
-</div> --}}
+</div>
 @endsection
