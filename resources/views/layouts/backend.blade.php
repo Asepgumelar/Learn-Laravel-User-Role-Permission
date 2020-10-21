@@ -3,7 +3,7 @@
 
 <head>
     @include('layouts.partials._meta')
-    <title>Laravel</title>
+    @include('layouts.partials._title')
     @include('layouts.partials._style')
 </head>
 <body class="hold-transition sidebar-mini text-sm layout-fixed layout-navbar-fixed">
