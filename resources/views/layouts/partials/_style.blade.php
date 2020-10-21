@@ -6,6 +6,12 @@
 
     <link rel="stylesheet" href="{{ asset('themes/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('themes/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('themes/plugins/toastr/toastr.min.css') }}">
+
     <link rel="stylesheet" href="{{ asset('themes/dist/css/adminlte.min.css') }}">
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    @yield('style')

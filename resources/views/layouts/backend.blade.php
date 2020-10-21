@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Laravel</title>
-    @include('partials.backend._style')
+    @include('layouts.partials._style')
 </head>
 <body class="hold-transition sidebar-mini text-sm layout-fixed layout-navbar-fixed">
     <div class="wrapper">
-        @include('partials.backend._nav')
+        @include('layouts.partials.components._nav')
 
-        @include('partials.backend._sidebar')
+        @include('layouts.partials.components._sidebar')
 
         <div class="content-wrapper">
             <div class="content-header">
@@ -34,7 +35,7 @@
 
             <div class="content">
                 <div class="container-fluid">
-                    
+
                     @yield('content')
                 </div>
             </div>
@@ -43,16 +44,11 @@
 
         <aside class="control-sidebar control-sidebar-dark"> </aside>
 
-        <footer class="main-footer">
-            <strong>Copyright &copy; 2020 <a href="http://adminlte.io">{{ 'app.name', 'Laravel'}}</a>.</strong>
-            All rights reserved.
-            <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> 
-            </div>
-        </footer>
+   @include('layouts.partials.components._footer')
+     
     </div>
 
-   @include('partials.backend._script')
+   @include('layouts.partials._script')
 </body>
 
 </html>

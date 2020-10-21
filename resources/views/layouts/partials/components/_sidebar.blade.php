@@ -1,4 +1,4 @@
-<aside class="main-sidebar elevation-4 sidebar-light-info">
+<aside class="main-sidebar elevation-1 sidebar-dark-indigo sidebar-no-expand">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
         <img src="{{ asset('themes/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
@@ -22,7 +22,7 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                 data-accordion="false">
-             
+
                 <li class="nav-item">
                     <a href="{{ route('dashboard') }}" class="nav-link {{ Request::path() == 'dashboard' ? 'active' : '' }}">
                         <i class="nav-icon fas fa-home"></i>
@@ -59,6 +59,14 @@
                             </a>
                         </li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-store-alt"></i>
+                        <p>
+                            Product
+                        </p>
+                    </a>
                 </li>
                 {{-- <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
