@@ -70,7 +70,7 @@ section {
 body {
     margin: 0;
     font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1rem;
+    font-size: .5rem;
     font-weight: 400;
     line-height: 1.5;
     color: #b8daff;
@@ -2351,8 +2351,8 @@ pre code {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
+    color: #e9eaea;
+    background-color: #2d3035;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
@@ -4389,9 +4389,9 @@ input[type=submit].btn-block {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: #e9eaea;
     vertical-align: middle;
-    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px;
+    background: #2d3035 url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)  no-repeat right .75rem center/8px 10px;
     border: 1px solid #ced4da;
     border-radius: .25rem;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
@@ -12720,7 +12720,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
     body:not(.sidebar-mini-md) .main-footer,
     body:not(.sidebar-mini-md) .main-header {
         transition: margin-left .3s ease-in-out;
-        margin-left: 250px
+        margin-left: 220px
     }
 }
 
@@ -12760,7 +12760,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
     .sidebar-mini-md .main-footer,
     .sidebar-mini-md .main-header {
         transition: margin-left .3s ease-in-out;
-        margin-left: 250px
+        margin-left: 0
     }
 }
 
@@ -12805,7 +12805,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 .main-sidebar,
 .main-sidebar::before {
     transition: margin-left .3s ease-in-out, width .3s ease-in-out;
-    width: 250px
+    width: 220px
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -12852,7 +12852,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 .layout-fixed .brand-link {
-    width: 250px
+    width: 220px
 }
 
 .layout-fixed .main-sidebar {
@@ -12908,7 +12908,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 .text-sm .content-header h1 {
-    font-size: 1.5rem
+    font-size: 1.25rem
 }
 
 .content-header .breadcrumb {
@@ -12962,7 +12962,7 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 .text-sm .main-header .nav-link>.fas,
 .text-sm .main-header .nav-link>.glyphicon,
 .text-sm .main-header .nav-link>.ion {
-    font-size: .875rem
+    font-size: .775rem
 }
 
 .main-header .navbar-nav .nav-item {
@@ -14922,7 +14922,7 @@ body.text-sm .control-sidebar {
 }
 
 .text-sm .dropdown-menu {
-    font-size: .875rem !important
+    font-size: .775rem !important
 }
 
 .text-sm .dropdown-toggle::after {
@@ -19550,7 +19550,7 @@ html.maximized-card {
 }
 
 .text-sm .card-title {
-    font-size: 1rem
+    font-size: .775rem
 }
 
 .text-sm .nav-link {
@@ -20302,7 +20302,7 @@ html.maximized-card {
 }
 
 .text-sm .btn {
-    font-size: .875rem !important
+    font-size: .75rem !important
 }
 
 .btn-default {
@@ -29607,7 +29607,7 @@ blockquote.quote-gray-dark h6 {
 }
 
 .text-sm {
-    font-size: .875rem !important
+    font-size: .775rem !important
 }
 
 .text-md {

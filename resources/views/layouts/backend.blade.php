@@ -6,7 +6,7 @@
     @include('layouts.partials._title')
     @include('layouts.partials._style')
 </head>
-<body class="hold-transition sidebar-mini text-sm layout-fixed layout-navbar-fixed accent-info">
+<body class="hold-transition text-sm layout-fixed layout-navbar-fixed accent-info">
     <div class="wrapper">
         @include('layouts.partials.components._nav')
 
