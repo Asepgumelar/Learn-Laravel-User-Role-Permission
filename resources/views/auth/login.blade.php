@@ -5,7 +5,7 @@
 @section('content')
 <!-- /.login-logo -->
 <div class="card elevation-4">
-    <div class="card-body login-card-body">
+    <div class="card-body login-card-body bg-dark">
         <p class="login-box-msg">Sign in to start aplication </p>
 
         <form method="POST" action="{{ route('login') }}">
