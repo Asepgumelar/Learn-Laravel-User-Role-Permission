@@ -41,7 +41,7 @@ class PermissionController extends Controller
                 ->make(true);
     }
 
-    public function store(Request $request) 
+    public function store(Request $request)
     {
         DB::beginTransaction();
 
@@ -71,6 +71,20 @@ class PermissionController extends Controller
             DB::rollback();
             Log::error($exc->getMessage());
             abort(500);
+        }
+    }
+
+    public function delete()
+    {
+        try {
+            $data = Permission::findOrFail($request->id);
+            $data->delete();
+
+            return response()->json(['code' => 200, 'message' => 'ok'], 200);
+
+        } catch (\Exception $e) {
+            Log::error($e->getMessage());
+            return response()->json(['code' => 400, 'message' => 'error' . $e->getMessage()], 400);
         }
     }
 }

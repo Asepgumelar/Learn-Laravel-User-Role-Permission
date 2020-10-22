@@ -40,7 +40,7 @@ class RolesController extends Controller
                 ->make(true);
     }
 
-    public function store(Request $request) 
+    public function store(Request $request)
     {
         DB::beginTransaction();
 
@@ -73,12 +73,12 @@ class RolesController extends Controller
         }
     }
 
-    public function showCreate() 
+    public function showCreate()
     {
         //
     }
 
-    public function delete() 
+    public function delete()
     {
         try {
             $data = Roles::findOrFail($request->id);

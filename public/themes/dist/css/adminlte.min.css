@@ -3663,14 +3663,14 @@ input[type=submit].btn-block {
     padding: .5rem 0;
     margin: .125rem 0 0;
     font-size: 1rem;
-    color: #212529;
+    color: #fff;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    background-color: #2d3035;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .15);
+    border: 1px solid rgba(255, 255, 255, .15);
     border-radius: .25rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .175)
+    box-shadow: 0 .5rem 1rem rgba(255, 255, 255, .175)
 }
 
 .dropdown-menu-left {
@@ -3838,18 +3838,19 @@ input[type=submit].btn-block {
     padding: .25rem 1rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: #fff;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
-    border: 0
+    border: 0;
+    transition: .3s all
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: #16181b;
     text-decoration: none;
-    background-color: #f8f9fa
+    background-color: #e9eaea
 }
 
 .dropdown-item.active,
@@ -13223,7 +13224,9 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 }
 
 .nav-sidebar .nav-item>.nav-link {
-    margin-bottom: .2rem
+    margin-bottom: .2rem;
+    transition: .3s all
+
 }
 
 .nav-sidebar .nav-item>.nav-link .right {
@@ -13566,8 +13569,10 @@ body.sidebar-collapse:not(.sidebar-mini-md):not(.sidebar-mini) .main-header::bef
 
 .sidebar-dark-info .nav-sidebar>.nav-item>.nav-link.active,
 .sidebar-light-info .nav-sidebar>.nav-item>.nav-link.active {
-    background-color: #17a2b8;
-    color: #fff
+    background-color: transparent;
+    border: 1px solid #17a2b8;
+    color: #fff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(17, 202, 202, 0.6)
 }
 
 .sidebar-dark-info .nav-sidebar.nav-legacy>.nav-item>.nav-link.active,
