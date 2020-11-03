@@ -10,4 +10,9 @@ use Illuminate\Routing\Controller as BaseController;
 class ApiController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function __construct()
+    {
+        date_timezone_set('Asia/Jakarta');
+    }
 }

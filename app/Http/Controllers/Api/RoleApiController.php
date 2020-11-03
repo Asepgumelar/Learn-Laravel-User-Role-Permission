@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class RoleApiController extends Controller
 {
-    //
+    public function __construct()
+    {
+        //
+    }
 }
