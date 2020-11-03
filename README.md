@@ -1,6 +1,7 @@
 ## Laravel
 
 Using Laravel V 7.25.0
+
 You can clone :)
 
     How to install
@@ -15,4 +16,3 @@ You can clone :)
         email: admin@gmail.com
         pass: Fkjs7834hjasd
 
-    
