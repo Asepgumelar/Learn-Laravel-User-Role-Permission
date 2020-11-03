@@ -17,7 +17,7 @@ class EncryptCast implements CastsAttributes
      */
     public function get($model, $key, $value, $attributes)
     {
-        return $value;
+        return decrypt($value);
     }
 
     /**
@@ -31,6 +31,6 @@ class EncryptCast implements CastsAttributes
      */
     public function set($model, $key, $value, $attributes)
     {
-        return $value;
+        return [$key => encrypt($value)];
     }
 }
