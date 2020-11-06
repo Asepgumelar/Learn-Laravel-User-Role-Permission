@@ -43,10 +43,10 @@ Route::group(['namespace' => 'backend'], function () {
     Route::post('permission/store', [PermissionController::class, 'store'])->name('permission-store');
     Route::post('permission/delete', [PermissionController::class, 'delete'])->name('permission-delete');
 
-    Route::get('role', [RolesController::class, 'index'])->name('role-index');
-    Route::get('role/datatable', [RolesController::class, 'getDataTable'])->name('role-getDataTable');
-    Route::get('role/create', [RolesController::class, 'showCreate'])->name('role-create');
-    Route::post('role/store', [RolesController::class, 'store'])->name('role-store');
-    Route::post('role/delete', [RolesController::class, 'delete'])->name('role-delete');
+    Route::get('role', [RoleController::class, 'index'])->name('role-index');
+    Route::get('role/datatable', [RoleController::class, 'getDataTable'])->name('role-getDataTable');
+    Route::get('role/create', [RoleController::class, 'showCreate'])->name('role-create');
+    Route::post('role/store', [RoleController::class, 'store'])->name('role-store');
+    Route::post('role/delete', [RoleController::class, 'delete'])->name('role-delete');
 
 });

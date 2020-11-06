@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Models\Roles;
+use App\Models\Role;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Validator;
 use Yajra\DataTables\DataTables as DataTables;
 use Illuminate\Support\Str;
 
-class RolesController extends Controller
+class RoleController extends Controller
 {
     public function index()
     {
@@ -21,7 +21,7 @@ class RolesController extends Controller
 
     public function getDataTable()
     {
-        $user = Roles::latest()->get();
+        $user = Role::latest()->get();
 
         return DataTables::of($user)
                 ->addIndexColumn()
@@ -55,7 +55,7 @@ class RolesController extends Controller
                     ->withInput();
             }
 
-            $role           = new Roles();
+            $role           = new Role();
             $role->name     = $request->input('name');
             $role->slug     = Str::slug($role->name);
             $role->save();
@@ -81,7 +81,7 @@ class RolesController extends Controller
     public function delete()
     {
         try {
-            $data = Roles::findOrFail($request->id);
+            $data = Role::findOrFail($request->id);
             $data->delete();
 
             return response()->json(['code' => 200, 'message' => 'ok'], 200);
