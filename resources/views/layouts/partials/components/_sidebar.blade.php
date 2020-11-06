@@ -24,12 +24,6 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route('user-index') }}" class="nav-link {{ Request::path() == 'user' ? 'active' : '' }}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>User</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a href="{{ route('role-index') }}" class="nav-link {{ Request::path() == 'role' ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Role</p>
@@ -39,6 +33,12 @@
                             <a href="{{ route('permission-index') }}" class="nav-link {{ Request::path() == 'permission' ? 'active' : '' }}">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Permission</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('user-index') }}" class="nav-link {{ Request::path() == 'user' ? 'active' : '' }}">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>User</p>
                             </a>
                         </li>
                     </ul>

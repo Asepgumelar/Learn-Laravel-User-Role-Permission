@@ -34,6 +34,9 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
+        'joined_at' => 'datetime',
+        'last_modified_at' => 'datetime',
         'email_verified_at' => 'datetime',
+
     ];
 }
