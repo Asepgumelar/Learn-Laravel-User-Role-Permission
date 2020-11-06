@@ -26,11 +26,11 @@ class RoleController extends Controller
         return DataTables::of($user)
                 ->addIndexColumn()
                 ->addColumn('action', function ($user){
-                    $btn = '<a href="javascript:void(0)" class="btn btn-link text-info"><i class="fa fa-eye"></i> Detail</a>
-                            <a href="javascript:void(0)" class="btn btn-link text-info"><i class="fa fa-edit"></i> Edit</a>
-                            <a href="#" class="btn btn-link text-info" onclick="deleteUser(' . $user->id . ')" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash-alt"></i> Delete</a>
-                            <a href="javascript:void(0)" class="btn btn-link text-info"><i class="far fa-copy"></i> Clone</a>';
-
+                    // $btn = '<a href="javascript:void(0)" class="btn btn-link text-info"><i class="fa fa-eye"></i> Detail</a>
+                    //         <a href="javascript:void(0)" class="btn btn-link text-info"><i class="fa fa-edit"></i> Edit</a>
+                    //         <a href="#" class="btn btn-link text-info" onclick="deleteUser(' . $user->id . ')" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash-alt"></i> Delete</a>
+                    //         <a href="javascript:void(0)" class="btn btn-link text-info"><i class="far fa-copy"></i> Clone</a>';
+                    $btn = '';
                     return $btn;
                 })
                 ->rawColumns(['action'])

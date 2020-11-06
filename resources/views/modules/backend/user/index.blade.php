@@ -62,7 +62,7 @@ User
             <div class="card-body">
                 <div class="table-responsive">
                     <table id="dtTableUser" class="table table-bordered table-hover table-sm table-striped">
-                        <thead class="bg-gray-dark">
+                        <thead>
                             <tr class="text-center">
                                 <th style="visibilty: hidden">ID</th>
                                 <th>No</th>
@@ -183,12 +183,11 @@ User
 
 
     function funcActive(idx) {
-        // var status = $(this).prop('checked') === true ? 1 : 0;
         var status = 0;
+
         if ($('#switchActive' + idx).prop('checked') === true) {
             var status = 1;
         }
-        console.log(status);
 
         $.ajax({
             headers: {
@@ -198,7 +197,7 @@ User
             url : '{{ route('user-active') }}',
             data: {
                 id: idx,
-                active: status
+                status: status
             },
             success: function (data) {
                 Swal.fire({
