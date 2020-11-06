@@ -33,17 +33,17 @@ User
                                     <div class="modal-body">
                                         <div class="form-group">
                                             <label for="">Name</label>
-                                            <input type="text" name="name" id="" class="form-control"
+                                            <input type="text" name="name"  class="form-control"
                                                 placeholder="Enter Name" aria-describedby="helpId">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Email</label>
-                                            <input type="email" name="email" id="" class="form-control"
+                                            <input type="email" name="email"  class="form-control"
                                                 placeholder="Enter Address" aria-describedby="helpId">
                                         </div>
                                         <div class="form-group">
                                             <label for="">Password</label>
-                                            <input type="password" name="password" id="" class="form-control"
+                                            <input type="password" name="password"  class="form-control"
                                                 placeholder="Enter Password" aria-describedby="helpId">
                                             <small id="helpId" class="text-muted">Min 8 Character</small>
                                         </div>
@@ -62,13 +62,14 @@ User
             <div class="card-body">
                 <div class="table-responsive">
                     <table id="dtTableUser" class="table table-bordered table-hover table-sm table-striped">
-                        <thead>
+                        <thead class="bg-gray-dark">
                             <tr class="text-center">
                                 <th style="visibilty: hidden">ID</th>
                                 <th>No</th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>Created At</th>
+                                <th>Active</th>
+                                <th>Joined At</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -85,9 +86,10 @@ User
 @endsection
 
 @section('script')
+
 <script>
     $(function () {
-       $("#dtTableUser").DataTable({
+        $("#dtTableUser").DataTable({
             responsive  : true,
             autoWidth   : false,
             processing  : true,
@@ -114,8 +116,20 @@ User
                     name      : 'email',
                     searchable: true },
                 {
-                    data      : 'created_at',
-                    name      : 'created_at',
+                    data      : 'active',
+                    name      : 'active',
+                    render: function (data, type, row) {
+                        if (data == true) {
+                            var checked = 'checked';
+                        } else {
+                            var checked = '';
+                        }
+                        return '<div class="custom-control custom-switch"><input type="checkbox" value="'+data+'" '+checked+' class="custom-control-input" id="switchActive'+row.id+'" onchange="funcActive('+row.id+')"><label class="custom-control-label" for="switchActive'+row.id+'"></label></div>';
+                    }
+                },
+                {
+                    data      : 'joined_at',
+                    name      : 'joined_at',
                     searchable: false },
                 {
                     data      : 'action',
@@ -154,13 +168,50 @@ User
                     className: "align-middle text-center" },
                 {
                     targets: 5,
+                    sortable: true,
+                    orderable: true,
+                    className: "align-middle text-center" },
+                {
+                    targets: 6,
                     sortable: false,
                     orderable: false,
                     className: "text-center",
                     width: "400px" },
             ]
-       });
+        });
     });
+
+
+    function funcActive(idx) {
+        // var status = $(this).prop('checked') === true ? 1 : 0;
+        var status = 0;
+        if ($('#switchActive' + idx).prop('checked') === true) {
+            var status = 1;
+        }
+        console.log(status);
+
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            type: 'POST',
+            url : '{{ route('user-active') }}',
+            data: {
+                id: idx,
+                active: status
+            },
+            success: function (data) {
+                Swal.fire({
+                    type : 'succes',
+                    title: 'Success',
+                    icon : 'success',
+                    text : 'You has change user active/inactive'
+                });
+
+                $('#dtTableUser').DataTable().draw();
+            }
+        })
+    }
 
     function deleteUser(idx) {
         Swal.fire({
@@ -178,16 +229,16 @@ User
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     },
                     type: 'POST',
-                    url: '{{ route('user-delete') }}',
+                    url : '{{ route('user-delete') }}',
                     data: {
                         id: idx
                     },
                     success: function (data) {
                         Swal.fire({
-                            type:   'success',
-                            title:  'Success',
-                            icon:   'success',
-                            text:   "You has been delete data",
+                            type : 'success',
+                            title: 'Success',
+                            icon : 'success',
+                            text : "You has been delete data"
                         });
 
                         $('#dtTableUser').DataTable().draw();

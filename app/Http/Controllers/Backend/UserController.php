@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Carbon\Carbon;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -30,11 +31,10 @@ class UserController extends Controller
                             <a href="javascript:void(0)" class="btn btn-link text-info border"><i class="fa fa-edit"></i> Edit</a>
                             <a href="#" class="btn btn-link text-info border" onclick="deleteUser(' . $user->id . ')" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash-alt"></i> Delete</a>
                             <a href="javascript:void(0)" class="btn btn-link text-info border"><i class="far fa-copy"></i> Clone</a>';
-
                     return $btn;
                 })
                 ->rawColumns(['action'])
-                ->editColumn('created_at', function ($user) {
+                ->editColumn('joined_at', function ($user) {
                     return $user->created_at ? with(new Carbon($user->created_at))->format('d F Y') : '';
                 })
                 ->make(true);
@@ -89,9 +89,24 @@ class UserController extends Controller
 
             return response()->json(['code' => 200, 'message' => 'ok'], 200);
 
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             Log::error($e->getMessage());
             return response()->json(['code' => 400, 'message' => 'error' . $e->getMessage()], 400);
         }
+    }
+
+    public function active(Request $request)
+    {
+        try {
+            $data = User::findOrFail($request->id);
+            $data->active = $request->active;
+            $data->update();
+
+            return response()->json(['code' => 200, 'message' => 'ok'], 200);
+        } catch (Exception $e) {
+            Log::error($e->getMessage());
+            return response()->json(['code' => 400, 'message' => 'error' . $e->getMessage()], 400);
+        }
+
     }
 }

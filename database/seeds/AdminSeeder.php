@@ -19,6 +19,8 @@ class AdminSeeder extends Seeder
         $user->name = 'Admin';
         $user->email = 'admin@gmail.com';
         $user->password = Hash::make('Fkjs7834hjasd');
+        $user->joined_at = now();
+        $user->created_at = now();
         $user->save();
 
         $faker = Faker::create();
@@ -28,6 +30,8 @@ class AdminSeeder extends Seeder
             $data->name          = $faker->name;
             $data->email         = $faker->email;
             $data->password    = Hash::make('asdasdasd');
+            $user->joined_at = now();
+            $user->created_at = now();
             $data->save();
         }
     }

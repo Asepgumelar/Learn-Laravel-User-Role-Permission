@@ -8,8 +8,8 @@
         </li>
         <li class="nav-item">
             <a href="/" class="brand-link">
-                <img src="{{ asset('themes/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
+                {{-- <img src="{{ asset('themes/dist/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: .8"> --}}
                 <span class="brand-text font-weight-light text-light">{{ env('APP_NAME') }}</span>
             </a>
         </li>
@@ -18,7 +18,7 @@
     <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                <img src="{{ asset('themes/dist/img/user2-160x160.jpg') }}" class="rounded-circle mr-1" width="20px">
+                {{-- <img src="{{ asset('themes/dist/img/user2-160x160.jpg') }}" class="rounded-circle mr-1" width="20px"> --}}
                 {{ Auth::user()->name }} <span class="caret"></span>
             </a>
 

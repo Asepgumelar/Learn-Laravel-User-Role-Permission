@@ -35,6 +35,7 @@ Route::group(['namespace' => 'backend'], function () {
     Route::get('user/create', [UserController::class, 'showCreate'])->name('user-create');
     Route::post('user/store', [UserController::class, 'store'])->name('user-store');
     Route::post('user/delete', [UserController::class, 'delete'])->name('user-delete');
+    Route::post('user/active', [UserController::class, 'active'])->name('user-active');
 
     Route::get('permission', [PermissionController::class, 'index'])->name('permission-index');
     Route::get('permission/datatable', [PermissionController::class, 'getDataTable'])->name('permission-getDataTable');

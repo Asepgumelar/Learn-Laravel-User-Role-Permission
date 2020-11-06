@@ -10,6 +10,10 @@
 
     <link rel="stylesheet" href="{{ asset('themes/plugins/toastr/toastr.min.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('themes/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset("themes/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css") }}">
+    <link rel="stylesheet" href="{{ asset('themes/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css') }}">
+
     <link rel="stylesheet" href="{{ asset('themes/dist/css/adminlte.min.css') }}">
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
