@@ -99,7 +99,7 @@ class UserController extends Controller
     {
         try {
             $data = User::findOrFail($request->id);
-            $data->active = $request->active;
+            $data->status = $request->status;
             $data->update();
 
             return response()->json(['code' => 200, 'message' => 'ok'], 200);

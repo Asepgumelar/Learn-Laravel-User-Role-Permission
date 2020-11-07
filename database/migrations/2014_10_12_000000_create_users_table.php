@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->boolean('active')->default(true)->comment('true = active, false = notActive');
+            $table->boolean('status')->default(true)->comment('true = active, false = notActive');
             $table->rememberToken();
             $table->timestamp('joined_at')->nullable();
             $table->timestamp('last_modified_at')->nullable();
