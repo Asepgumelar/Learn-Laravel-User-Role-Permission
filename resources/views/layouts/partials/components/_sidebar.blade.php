@@ -1,4 +1,4 @@
-<aside class="main-sidebar elevation-1 sidebar-dark-info sidebar-no-expand">
+<aside class="main-sidebar sidebar-dark-info sidebar-no-expand">
     <!-- Sidebar -->
     <div class="sidebar">
         <!-- Sidebar Menu -->
