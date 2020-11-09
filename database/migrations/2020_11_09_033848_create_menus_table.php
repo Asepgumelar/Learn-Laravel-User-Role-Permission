@@ -18,6 +18,7 @@ class CreateMenusTable extends Migration
             $table->string('name');
             $table->string('slug');
             $table->string('icon');
+            $table->text('desctiption');
             $table->timestamps();
         });
     }

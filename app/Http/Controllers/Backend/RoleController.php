@@ -45,7 +45,7 @@ class RoleController extends Controller
 
         try {
             $validator = Validator::make($request->all(), [
-                'name'     => ['required', 'string', 'max:255'],
+                'name'        => ['required', 'string', 'max:255'],
             ]);
 
             if ($validator->fails()) {
@@ -54,9 +54,9 @@ class RoleController extends Controller
                     ->withInput();
             }
 
-            $role           = new Role();
-            $role->name     = $request->input('name');
-            $role->slug     = Str::slug($role->name);
+            $role              = new Role();
+            $role->name        = $request->input('name');
+            $role->slug        = Str::slug($role->name);
             $role->save();
 
             DB:: commit();

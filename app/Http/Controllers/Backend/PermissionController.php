@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Validator;
 use Yajra\DataTables\DataTables as DataTables;
 use Illuminate\Support\Str;
 
-
 class PermissionController extends Controller
 {
     public function index()
@@ -47,7 +46,8 @@ class PermissionController extends Controller
 
         try {
             $validator = Validator::make($request->all(), [
-                'name'     => ['required', 'string', 'max:255'],
+                'name'        => ['required', 'string', 'max:255'],
+                'description' => ['required', 'string', 'max:255'],
             ]);
 
             if ($validator->fails()) {
@@ -56,10 +56,11 @@ class PermissionController extends Controller
                     ->withInput();
             }
 
-            $permission           = new Permission();
-            $permission->name     = $request->input('name');
-            $permission->slug     = Str::slug($permission->name);
-            $permission->save();
+            $data              = new Permission();
+            $data->name        = $request->input('name');
+            $data->slug        = Str::slug($data->name);
+            $data->description = $request->input('description');
+            $data->save();
 
             DB:: commit();
 
