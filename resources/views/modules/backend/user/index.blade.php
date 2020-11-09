@@ -24,7 +24,7 @@ User
                     <!-- Modal -->
                     <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content bg-dark">
+                            <div class="modal-content bg-dark elevation-3">
                                 <div class="modal-header">
                                     <h5 class="modal-title">Create User</h5>
                                 </div>
@@ -116,10 +116,12 @@ User
                     name      : 'email',
                     searchable: true },
                 {
-                    data      : 'active',
-                    name      : 'active',
+                    data      : 'status',
+                    name      : 'status',
+                    orderable : false,
+                    searchable: false,
                     render: function (data, type, row) {
-                        if (data == true) {
+                        if (data === true) {
                             var checked = 'checked';
                         } else {
                             var checked = '';
@@ -183,12 +185,13 @@ User
 
 
     function funcActive(idx) {
-        var status = 0;
-
         if ($('#switchActive' + idx).prop('checked') === true) {
             var status = 1;
+        } else {
+            var status = 0;
         }
 
+        console.log(status);
         $.ajax({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

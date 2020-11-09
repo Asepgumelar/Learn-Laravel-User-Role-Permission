@@ -22,7 +22,7 @@ class UserController extends Controller
 
     public function getDataTable()
     {
-        $user = User::latest()->get();
+        $user = User::orderBy('joined_at', 'desc')->latest()->get();
 
         return DataTables::of($user)
                 ->addIndexColumn()
@@ -100,6 +100,7 @@ class UserController extends Controller
         try {
             $data = User::findOrFail($request->id);
             $data->status = $request->status;
+            $data->last_modified_at = now();
             $data->update();
 
             return response()->json(['code' => 200, 'message' => 'ok'], 200);

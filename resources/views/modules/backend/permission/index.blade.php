@@ -24,7 +24,7 @@ Permission
                     <!-- Modal -->
                     <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
+                            <div class="modal-content bg-dark elevation-3">
                                 <div class="modal-header">
                                     <h5 class="modal-title">Create Permission</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -38,6 +38,10 @@ Permission
                                             <label for="">Name</label>
                                             <input type="text" name="name" id="" class="form-control"
                                                 placeholder="Enter Name" aria-describedby="helpId">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="">Description</label>
+                                          <textarea class="form-control" name="description" id="" rows="3" placeholder="Enter Description"></textarea>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
